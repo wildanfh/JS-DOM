@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>play with color</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .dark-mode {
+        background-color: #444;
+        color: white;
+      }
+
+      /* .merah {
+        background-color: rgb(240, 123, 123);
+      }
+
+      .kuning {
+        background-color: yellow;
+      }
+
+      .hijau {
+        background-color: lightgreen;
+      }
+
+      .biru {
+        background-color: lightblue;
+      }
+
+      .ungu {
+        background-color: rgb(201, 76, 201);
+      } */
+      html,
+      body {
+        height: 100%;
+      }
+
+      .kotak {
+        width: 20px;
+        padding: 20px;
+        margin: 10px auto;
+      }
+      .merah {
+        background-color: red;
+      }
+
+      .hijau {
+        background-color: green;
+      }
+
+      .biru {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>bermain dengan warna</h1>
+    <button type="button">dark mode</button>
+
+    <br /><br />
+
+    <div class="kotak merah"></div>
+    <input type="range" name="sMerah" min="0" max="255" />
+    <div class="kotak hijau"></div>
+    <input type="range" name="sHijau" min="0" max="255" />
+    <div class="kotak biru"></div>
+    <input type="range" name="sBiru" min="0" max="255" />
+    <script src="jsdom.js"></script>
+  </body>
+</html>

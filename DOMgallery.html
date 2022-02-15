@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="in">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+      }
+
+      body {
+        background-color: #ccc;
+        text-align: center;
+      }
+
+      .container {
+        border: 5px solid white;
+        margin: 10px auto;
+        width: 600px;
+        overflow: auto;
+      }
+
+      .thumb {
+        width: 200px;
+        height: 150px;
+        border: 2px solid white;
+        box-sizing: border-box;
+        float: left;
+      }
+
+      .thumb:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+
+      .fade {
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+      }
+
+      .active {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="img/1.jpg" alt="cat1" class="jumbo" width="600" height="400" />
+      <div class="thumbnail">
+        <img src="img/1.jpg" alt="cat1" class="thumb" />
+        <img src="img/2.jpg" alt="cat2" class="thumb" />
+        <img src="img/3.jpg" alt="cat3" class="thumb" />
+        <img src="img/4.jpg" alt="cat4" class="thumb" />
+        <img src="img/5.jpg" alt="cat5" class="thumb" />
+        <img src="img/6.jpg" alt="cat6" class="thumb" />
+      </div>
+    </div>
+    <script src="jsdom.js"></script>
+  </body>
+</html>

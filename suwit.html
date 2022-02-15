@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>suit jawa 2.0</title>
+    <style>
+      body {
+        background-image: url(img/bg.png);
+      }
+
+      .container {
+        max-width: 1080px;
+        margin: 20px auto;
+        position: relative;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .wadah-comp {
+        height: 400px;
+        background-image: linear-gradient(to top, lightblue, rgb(125, 125, 252));
+        border-radius: 30px;
+        margin-bottom: 20px;
+        display: grid;
+        place-items: center;
+      }
+
+      .wadah-comp .img-komputer {
+        margin-top: -45px;
+      }
+
+      .wadah-orang {
+        background-image: linear-gradient(to bottom, lightgreen, rgb(89, 196, 89));
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .gajah,
+      .orang,
+      .semut {
+        padding: 50px 5px;
+        max-width: 300px;
+        min-width: 100px;
+        transition: 0.5s;
+      }
+
+      .gajah:hover,
+      .orang:hover,
+      .semut:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(1px 1px 7px green);
+      }
+
+      .jawaban {
+        width: 200px;
+        height: 80px;
+        position: absolute;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
+        border-radius: 30px;
+        background-color: #fff;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        place-items: center;
+        font-size: 40px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SUIT JAWA 2.0</h1>
+      <div class="wadah-comp">
+        <span></span>
+        <img src="img/gajah.png" alt="" class="img-komputer" />
+      </div>
+      <div class="jawaban"></div>
+      <div class="wadah-orang">
+        <span></span>
+        <img src="img/gajah.png" alt="gajah" class="gajah" />
+        <img src="img/orang.png" alt="orang" class="orang" />
+        <img src="img/semut.png" alt="semut" class="semut" />
+      </div>
+    </div>
+    <script src="jsdom.js"></script>
+  </body>
+</html>
